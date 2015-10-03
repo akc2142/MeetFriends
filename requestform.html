@@ -1,0 +1,133 @@
+
+<html lang="en"> <!--<![endif]-->
+<head>
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Ploome</title>
+<META http-equiv="expires" content="0">
+<meta http-equiv="content-language" content="en-US"/>
+<link rel="canonical" href="http://tam.outbrain.com/anita/meetfriends.html"/>
+
+<link rel="stylesheet" type="text/css" href="">
+</head>
+
+<body>
+  <div class="header">
+<img src="https://raw.githubusercontent.com/akc2142/MeetFriends/master/ploomeheader.png">
+</div>
+
+
+<form name=form1 method=POST action= target=newWin>
+<legend> <div class='title'>give us the basics</div></legend>
+<table>
+<tr>
+<td><b>email<td><input type=text id=f1 name=fullname size=40 class=input>
+<tr>
+<td><b>d.o.b.<td><input type=text id=f2 name=dob size=40 class=input>
+<tr>
+<td><b>neighborhood<td><select name="education" id="slctSingle" class="input" style="width:160">
+                                <option id="none" value="0">-choose neighborhood-</option>
+                                <option id="midtown" value="midtown">midtown</option>
+                                <option id="ue" value="ue">upper east side</option>
+                                <option id="sof14" value="sof14">south of 14th st</option>
+                                <option id="uws" value="uws">upperwest side</option>
+                            </select>
+<tr>
+<td><b>mobile number<td><input type=text id=f3 name=dob size=40 class=input>
+
+</textarea>
+</table>
+
+<div class='go-button'>
+<input type='hidden' value='' onClick=" return validate()">
+  <input type='image'src='/Users/acampbell/Desktop/meetfriends/go-button.png'>
+<input type=reset  value='Clear'>
+</div>
+
+<div id=f7 class=hide>Please correct error fields</div>
+
+<input type=hidden name=_email    value='campbellanitak@gmail.com'>
+<input type=hidden name=_redirect value='http://samsultan.com/javascript/demo/4dom/thankyou.html'>
+</form>
+
+
+<script>
+
+<!-- JavaScript code to validate the form entry fields ----------------------------->
+
+function validate() {
+
+    errorMsg = "";
+
+    document.getElementById("f1").className = "input";
+    document.getElementById("f2").className = "input";
+    document.getElementById("f3").className = "hide";
+    document.getElementById("f4").className = "hide";
+    document.getElementById("f5").className = "input";
+    document.getElementById("f6").className = "input";
+    document.getElementById("f7").className = "hide";
+
+    if (document.form1.fullname.value == '') {               //--- validate fullname
+        document.getElementById("f1").className = "show1";
+        errorMsg = "yes";
+    }
+
+    if (document.form1.address.value == '') {                //--- validate address
+        document.getElementById("f2").className = "show1";
+        errorMsg = "yes";
+    }
+
+    if (document.form1.sex[0].checked == false &&            //--- validate sex
+        document.form1.sex[1].checked == false    ) {
+        document.getElementById("f3").className = "show2";
+        errorMsg = "yes";
+    }
+
+    if (document.form1.status[0].checked == false &&         //--- validate status
+        document.form1.status[1].checked == false &&
+        document.form1.status[2].checked == false    ) {
+        document.getElementById("f4").className = "show2";
+        errorMsg = "yes";
+    }
+
+    if (document.getElementById('f5').selectedIndex == 0)     //--- validate education
+    {
+        document.getElementById("f5").className = "show1";
+        errorMsg = "yes";
+    }
+
+    enteredHobbies = '';                                        //--- validate hobby
+    for (i = 0; i < document.form1.hobby.options.length; i++)
+    {
+        if (document.form1.hobby.options[i].selected == true)
+            enteredHobbies += document.form1.hobby.options[i].value + " ";
+    }
+    if (enteredHobbies == '') {
+        document.getElementById("f6").className = "show1";
+        errorMsg = "yes";
+    }
+
+    if (errorMsg != '') {                                   //--- if there are errors
+        document.getElementById("f7").className = "show2";
+    return(false);
+    }
+
+    submit = confirm('Please confirm your order.....');   //--- confirm submission
+    if (submit == false)                                  //    if click on Cancel
+    return(false);                                        //    do not submit
+
+    nw = window.open('','newWin','height=300,width=500')  //open a window
+                                                          //will be used for output of cgi script
+    nw.document.write("Processing...");
+
+    return(true);
+}
+
+
+//-->
+</script>
+
+
+</body>
+</html>

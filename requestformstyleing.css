@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+
+td{
+	color:6485c4;
+	font-family: Source
+	}
+
+.title{
+	font-family: SourceSansPro;
+    src: url('source-sans-pro/SourceSansPro-Italic.otf');
+	font-style: italic;
+	}

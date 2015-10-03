@@ -1,3 +1,67 @@
+.header img {
+    width: 102%;
+    margin: -10px;
+}
+
+
+
+.quail {
+    vertical-align: middle;
+    margin-left: 40%;
+}
+
+.button-request, .button-signin {
+    position: relative;
+    top: 5%;
+    left: 30%;
+}
+
+.button-request {
+  padding-top: 2%;
+}
+
+
+.button-signin img:hover, .button-request img:hover {
+  box-shadow: 0 4px #6485c4;
+	top: 2px;
+  border-radius: 30px;
+  position: relative;
+}
+
 body {
-background-image: url("https://raw.githubusercontent.com/akc2142/MeetFriends/master/ploomeheader.png");
+  font-family: 'Source Sans Pro Light';
+
+}
+
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url('source-sans-pro/SourceSansPro-Regular.otf');
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url('source-sans-pro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url('source-sans-pro/SourceSansPro-Italic.otf');
+    font-style: italic;
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url('source-sans-pro/SourceSansPro-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url('source-sans-pro/SourceSansPro-Light.otf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url('source-sans-pro/SourceSansPro-LightItalic.otf');
+    font-style: italic;
+    font-weight: 300;
 }

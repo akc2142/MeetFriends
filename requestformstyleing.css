@@ -11,3 +11,7 @@ td{
     src: url('source-sans-pro/SourceSansPro-Italic.otf');
 	font-style: italic;
 	}
+
+	input {
+    border: none;
+}

@@ -12,16 +12,14 @@ td{
 	font-style: italic;
 	font-size:30px;
 	position:relative;
-	left: 110%;
+	left: 178%;
 }
 
-.tande:hover {
-    background-color: #45c1b6;
-}
+
 
 .email{
 	color:#6485c4;
-	padding-left:300px;
+	padding-left:215px;
 	padding-bottom:10px;
 	}
 
@@ -63,4 +61,47 @@ form{
 #f7{
 	position:relative;
 	left:29%
+	}
+
+.interests{
+	appearance:none;
+	}
+
+.tande {
+    margin:4px;
+    background-color:#FFFFFF;
+    border-radius:20px;
+    border:1px solid #6485c4;
+    overflow:auto;
+    float:left;
+	padding:10px 20px;
+	color:6485c4;
+}
+
+.tande:hover {
+    background-color: #45c1b6;
+		box-shadow: 0 4px #6485c4;
+		top: 2px;
+		border-radius: 30px;
+		position: relative;
+		cursor: hand;
+}
+
+.answers{
+	position:relative;
+	left:5%
+	}
+
+.survey{
+	color:#45c1b6;
+	font-size:24px;
+	}
+
+.a{
+	display:none;
+	}
+
+.apis{
+	position:relative;
+	left:5%;
 	}

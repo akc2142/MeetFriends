@@ -20,27 +20,13 @@ h3 {
 .button-request, .button-signin {
     position: relative;
     top: 5%;
-    left: 30%;
+    left: 32%;
 }
 
 .button-request {
   padding-top: 2%;
 }
 
-.body {
-    opacity: 0.5;
-    background-image: url("https://raw.githubusercontent.com/akc2142/MeetFriends/master/background.jpg");
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#content {
-  z-index: 99;
-}
 
 .button-signin img:hover, .button-request img:hover {
   box-shadow: 0 4px #6485c4;

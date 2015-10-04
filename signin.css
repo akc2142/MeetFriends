@@ -1,37 +1,38 @@
 @charset "UTF-8";
 /* CSS Document */
 
-td{
-	color:6485c4;
-	font-family: Source
-	}
 
 .title{
 	font-family: SourceSansPro;
+	color: #45c1b6;
 	font-style: italic;
 	font-size:32px;
 	position:relative;
 	font-weight: 300;
-	left: 110%;
-	color: #543b6d;
-}
-
-.header img {
-    width: 102%;
-    margin: -10px;
+	left: 178%;
 }
 
 
-.go-button:hover {
-box-shadow: 0 4px #6485c4;
-top: 2px;
-border-radius: 30px;
-position: relative;
+.tande:hover {
+	box-shadow: 0 4px #6485c4;
+	top: 2px;
+	border-radius: 30px;
+	position: relative;
+}
+.apis {
+	color: #6485c4;
+}
+
+
+
+ {
+    color: #fff;
+    background-color: #6485c4;
 }
 
 .email{
 	color:#6485c4;
-	padding-left:300px;
+	padding-left:215px;
 	padding-bottom:10px;
 	}
 
@@ -63,7 +64,6 @@ position: relative;
 	border:none;
 	position: relative;
 	left: 28%;
-	width: 222px;
 	}
 
 form{
@@ -74,4 +74,38 @@ form{
 #f7{
 	position:relative;
 	left:29%
+	}
+
+.interests{
+	appearance:none;
+	}
+
+.tande {
+    margin:4px;
+    background-color:#FFFFFF;
+    border-radius:20px;
+    border:1px solid #6485c4;
+    overflow:auto;
+    float:left;
+	padding:10px 20px;
+	color:6485c4;
+}
+
+.answers{
+	position:relative;
+	left:5%
+	}
+
+.survey{
+	color:#45c1b6;
+	font-size:24px;
+	}
+
+.a{
+	display:none;
+	}
+
+.apis{
+	position:relative;
+	left:5%;
 	}

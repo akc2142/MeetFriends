@@ -1,20 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
 
-td{
-	color:6485c4;
-	font-family: Source
-	}
 
 .title{
 	font-family: SourceSansPro;
-    src: url('/Users/acampbell/Desktop/meetfriends/source-sans-pro/SourceSansPro-Italic.otf');
+	color: #45c1b6;
 	font-style: italic;
-	font-size:30px;
+	font-size:32px;
 	position:relative;
+	font-weight: 300;
 	left: 178%;
 }
-
 
 
 .email{
@@ -66,7 +62,7 @@ form{
 .interests{
 	appearance:none;
 	}
-
+	
 .tande {
     margin:4px;
     background-color:#FFFFFF;
@@ -76,15 +72,6 @@ form{
     float:left;
 	padding:10px 20px;
 	color:6485c4;
-}
-
-.tande:hover {
-    background-color: #45c1b6;
-		box-shadow: 0 4px #6485c4;
-		top: 2px;
-		border-radius: 30px;
-		position: relative;
-		cursor: hand;
 }
 
 .answers{

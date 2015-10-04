@@ -4,13 +4,12 @@
 <!-- Basic -->
 <meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<title>Ploome - Find your Flock ¯\_(ツ)_/¯</title>
+<title>Ploome</title>
 <META http-equiv="expires" content="0">
 <meta http-equiv="content-language" content="en-US"/>
 <link rel="canonical" href="http://tam.outbrain.com/anita/meetfriends.html"/>
 <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/akc2142/MeetFriends/master/ploome.css">
-
-<link rel="stylesheet" type="text/css" href="./requestformstyleing.css">
+<link rel="stylesheet" type="text/css" href="signinsurveystyling.css">
 </head>
 
 <body>
@@ -20,37 +19,88 @@
 
 
 <form name=form1 method=POST action= target=newWin>
-<legend> <div class='title'>Request your membership</div></legend>
+<legend> <div class='title'>Give us your deets</div></legend>
 <br>
 <br>
 
+<div class="survey">What are you interested in? &nbsp </div>
+		<br><br>
+      <div class="answers">
+        <div class="tande"><input type=checkbox name=fullname class="a" value="value1"> Tech &amp; Entrepreneurship </div>
+        <div class="tande"><input type=checkbox name=fullname class="a" value="value2"> Social Innovation</div>
+        <div class="tande"><input type=checkbox name=fullname class="a" value="value3"> Arts</div>
+    	<br><br><br>
+        <div class="tande"><input type=checkbox name=fullname class="a" value="value4"> Media / Advertising</div>
+        <div class="tande"><input type=checkbox name=fullname class="a" value="value5"> Live Music</div>
+        <div class="tande"><input type=checkbox name=fullname class="a" value="value6"> Cooking &amp; Baking</div>
+        <br><br><br>
+        <div class="tande"><input type=checkbox name=fullname class="a" value="value7"> Health &amp; Fitness</div>
+        <div class="tande"><input type=checkbox name=fullname class="a" value="value8"> Nature &amp; Hiking </div>
+        <div class="tande"><input type=checkbox name=fullname class="a" value="value9"> Woman's &amp; Feminist Issues</div>
+      </div>
+        
+<br><br><br><br><br>
 
-
-<div class="email">Email: &nbsp <input type=text id=f1 name=fullname size=40 class=input></div>
-
-<div class ="mobilenumber">Mobile Number &nbsp <input type=text id=f3 name=dob size=40 class=input></div>
-
+<div class ="survey">Link with us so that we can make better matches for you based on your interests (optional): &nbsp </div>
+<br><br>
+<div class="apis">
+	<div id="facebook"><img src="https://github.com/akc2142/MeetFriends/blob/master/facebookbutton.png?raw=true" />Link with Facebook
+    </div>
+	<br>
+	<br>
+	<div id="twitter"><img src="https://github.com/akc2142/MeetFriends/blob/master/twitterbutton.png?raw=true"/> Link with Twitter </div>
+	<br>
+	<br>
+	<div id="spotify"><img src="https://github.com/akc2142/MeetFriends/blob/master/spotifybutton.png?raw=true"/> Link with Spotify</div>
+    <br>
+	<br>
+	<div id="netflix"><img src="https://github.com/akc2142/MeetFriends/blob/master/netflixbutton.png?raw=true"/> Link with Netflix
+</div>
+</div>
 
 </textarea>
 
 <br>
 <br>
+<br>
+
+<div class="survey">What are your food preferences? &nbsp </div>
+<br><br>
+<div class="answers">
+        <div class="tande"><input type=radio name=fullname class="a" value="value10"> I eat everything </div>
+        <div class="tande"><input type=radio name=fullname class="a" value="value11"> I'm vegetarian </div>
+        <div class="tande"><input type=radio name=fullname class="a" value="value12"> I'm pescatarian</div>
+    	<br><br><br>
+        
+        <div class="tande"><input type=radio name=fullname class="a" value="value13"> I'm vegan </div>
+        <div class="tande"><input type=radio name=fullname class="a" value="value14"> I'm kosher </div>
+        <div class="tande"><input type=radio name=fullname class="a" value="value15"> I'm gluten-free</div>
+    	<br><br><br>
+        
+        <div class="tande"><input type=text name=fullname class="a" value="value16"> Other/Allergies: </div>
+		<br><br><br>
+
 
 <div class='go-button'>
 <input type='hidden' value='' onClick=" return validate()">
-  <input type='image'src='./requestbutton.png'>
+
+  <input type='image'src='go-button.png'>
 
 </div>
 <br>
+<div id=f7 class=hide>Please correct error fields</div>
+
 <input type=hidden name=_email    value='campbellanitak@gmail.com'>
 <input type=hidden name=_redirect value='https://raw.githubusercontent.com/akc2142/MeetFriends/master/thankyou.html'>
+
+
 </form>
 
 
 <script>
 
+<!-- JavaScript code to validate the form entry fields ----------------------------->
 
-<!-- TODO: JavaScript code to validate the form entry fields ----------------------------->
 function validate() {
 
     errorMsg = "";

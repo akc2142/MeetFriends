@@ -10,4 +10,59 @@ td{
 	font-family: SourceSansPro;
     src: url('source-sans-pro/SourceSansPro-Italic.otf');
 	font-style: italic;
+	font-size:30px;
+	position:relative;	
+	left: 175%;
+}
+
+
+input{
+	border: 1px solid #6485c4;
+	height: 30px;
+	width: 300px;
+	border-radius: 15px;
+	}
+
+
+.email{
+	color:#6485c4;
+	padding-left:300px;
+	padding-bottom:10px;
+	}
+
+.dob{
+	color:#6485c4;
+	padding-left:300px;
+	padding-bottom:10px;
+	}
+
+.neighborhood{
+	color:#6485c4;
+	padding-left:300px;
+	padding-bottom:10px;
+	}
+
+.mobilenumber{
+	color:#6485c4;
+	padding-left:300px;
+	padding-bottom:10px;
+	}
+
+.createpassword{
+	color:#6485c4;
+	padding-left:300px;
+	padding-bottom:10px;
+	}
+
+.email input{
+	width:370px;
+	}
+
+.dob input{
+	width: 374px;
+	}
+	
+form{
+	position:relative;
+	left:15%
 	}

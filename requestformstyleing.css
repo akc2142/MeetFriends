@@ -8,10 +8,10 @@ td{
 
 .title{
 	font-family: SourceSansPro;
-    src: url('source-sans-pro/SourceSansPro-Italic.otf');
+    src: url('/Users/acampbell/Desktop/meetfriends/source-sans-pro/SourceSansPro-Italic.otf');
 	font-style: italic;
 	font-size:30px;
-	position:relative;	
+	position:relative;
 	left: 175%;
 }
 
@@ -61,7 +61,7 @@ input{
 .dob input{
 	width: 374px;
 	}
-	
+
 form{
 	position:relative;
 	left:15%

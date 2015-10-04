@@ -3,8 +3,15 @@
     margin: -10px;
 }
 
-
-
+h3 {
+  text-align: center;
+  font-family: SourceSansPro;
+  font-size: 28px;
+  color: #543b6d;
+  -webkit-font-smoothing:antialiased;
+  font-style: italic;
+  font-weight: 300;
+}
 .quail {
     vertical-align: middle;
     margin-left: 40%;
@@ -33,35 +40,34 @@ body {
 
 }
 
-
 @font-face {
     font-family: SourceSansPro;
-    src: url('source-sans-pro/SourceSansPro-Regular.otf');
+    src: url('/Users/acampbell/Desktop/meetfriends/source-sans-pro/SourceSansPro-Regular.otf');
 }
 @font-face {
     font-family: SourceSansPro;
-    src: url('source-sans-pro/SourceSansPro-Bold.otf');
+    src: url('/Users/acampbell/Desktop/meetfriends/source-sans-pro/SourceSansPro-Bold.otf');
     font-weight: bold;
 }
 @font-face {
     font-family: SourceSansPro;
-    src: url('source-sans-pro/SourceSansPro-Italic.otf');
+    src: url('/Users/acampbell/Desktop/meetfriends/source-sans-pro/SourceSansPro-Italic.otf');
     font-style: italic;
 }
 @font-face {
     font-family: SourceSansPro;
-    src: url('source-sans-pro/SourceSansPro-BoldItalic.otf');
+    src: url('/Users/acampbell/Desktop/meetfriends/source-sans-pro/SourceSansPro-BoldItalic.otf');
     font-weight: bold;
     font-style: italic;
 }
 @font-face {
     font-family: SourceSansPro;
-    src: url('source-sans-pro/SourceSansPro-Light.otf');
+    src: url('/Users/acampbell/Desktop/meetfriends/source-sans-pro/SourceSansPro-Light.otf');
     font-weight: 300;
 }
 @font-face {
     font-family: SourceSansPro;
-    src: url('source-sans-pro/SourceSansPro-LightItalic.otf');
+    src: url('/Users/acampbell/Desktop/meetfriends/source-sans-pro/SourceSansPro-LightItalic.otf');
     font-style: italic;
     font-weight: 300;
 }
